@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slack に招待するマン</title>
+  </head>
+  <body>
+    <h1>welcome!!</h1>
+    <form action="<?= app_url ?>" method="POST">
+      <p>
+        <label>招待コード</label>
+        <input name="token" type="text" value="<?= token ?>">
+      </p>
+      <p>
+        <label>招待メールの送り先アドレス</label>
+        <input name="email" type="text" placeholder="hogehoge@hogehoge.com">
+      </p>
+      <input type="submit" value="submit">
+    </form>
+  </body>
+</html>
