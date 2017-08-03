@@ -86,7 +86,10 @@ function doGet (e) {
     var template = HtmlService.createTemplateFromFile("index");
     template.token = e.parameter.token || "";
     template.app_url = APP_URL;
-    return template.evaluate();
+
+    var html = template.evaluate();
+    html.setTitle("Slack 招待マン");
+    return html;
 }
 
 function doPost(e) {
